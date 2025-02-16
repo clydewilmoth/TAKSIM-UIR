@@ -1,8 +1,8 @@
-# React + Vite
+# Taksim-UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend Part of Taksim Website
+[API Server](https://github.com/BorisG0/taksim-server)
 
-Currently, two official plugins are available:
+# Start
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+start the REACT Vite App
