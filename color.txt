@@ -1,0 +1,5 @@
+red: #EE1D23
+light brown: #BB8378
+cream: #FFF6F3
+brown: #4B2620
+gold: #E7CD78
