@@ -7,6 +7,7 @@ function Menu() {
   const [hidden, setHidden] = useState(true);
   const location = useLocation();
   menuHidden = hidden;
+  menuSetHidden = setHidden;
   return (
     <>
       <img
@@ -67,5 +68,5 @@ function Menu() {
   );
 }
 
-export let menuHidden;
+export let menuHidden, menuSetHidden;
 export default Menu;

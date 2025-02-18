@@ -5,7 +5,7 @@ import Logo from "../../assets/logo.svg";
 import SmallLogo from "../../assets/logo_s.svg";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { menuHidden } from "../Menu/Menu";
+import { menuHidden, menuSetHidden } from "../Menu/Menu";
 
 function Header() {
   const [big, setBig] = useState(true);
@@ -24,8 +24,22 @@ function Header() {
           : false
       )
     );
+    window.addEventListener("click", () =>
+      setBig(
+        window.scrollY < 1 && menuHidden && location.pathname === "/"
+          ? true
+          : false
+      )
+    );
     return () => {
       window.removeEventListener("scroll", () =>
+        setBig(
+          window.scrollY < 1 && menuHidden && location.pathname === "/"
+            ? true
+            : false
+        )
+      );
+      window.addEventListener("click", () =>
         setBig(
           window.scrollY < 1 && menuHidden && location.pathname === "/"
             ? true
@@ -53,6 +67,7 @@ function Header() {
             style={{
               height: big && location.pathname === "/" ? "25vw" : "2.5em",
             }}
+            onClick={() => menuSetHidden(true)}
           />
         </Link>
       </div>

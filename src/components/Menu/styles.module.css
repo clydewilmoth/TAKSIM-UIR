@@ -10,10 +10,9 @@
     position: fixed;
     left: 0%;
     top: 0;
-    z-index: 0;
     transition: all 0.3s ease-in-out;
     overflow: hidden;
-    z-index: 2;
+    z-index: 4;
 }
 
 .button:hover{
@@ -23,7 +22,7 @@
 .button{
     height: 2.5em;
     filter: invert(92%) sepia(4%) saturate(571%) hue-rotate(319deg) brightness(103%) contrast(105%);
-    z-index: 3;
+    z-index: 6;
 }
 
 .item{
@@ -31,7 +30,7 @@
     padding: 0.5em;
     color: #FFF6F3;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
