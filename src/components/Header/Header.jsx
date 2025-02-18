@@ -12,35 +12,26 @@ function Header() {
   const location = useLocation();
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    setBig(
+      window.scrollY < 1 && menuHidden && location.pathname === "/"
+        ? true
+        : false
+    );
+    window.addEventListener("scroll", () =>
       setBig(
         window.scrollY < 1 && menuHidden && location.pathname === "/"
           ? true
           : false
-      );
-    });
-    window.addEventListener("click", () => {
-      setBig(
-        window.scrollY < 1 && menuHidden && location.pathname === "/"
-          ? true
-          : false
-      );
-    });
+      )
+    );
     return () => {
-      window.removeEventListener("scroll", () => {
+      window.removeEventListener("scroll", () =>
         setBig(
           window.scrollY < 1 && menuHidden && location.pathname === "/"
             ? true
             : false
-        );
-      });
-      window.removeEventListener("click", () => {
-        setBig(
-          window.scrollY < 1 && menuHidden && location.pathname === "/"
-            ? true
-            : false
-        );
-      });
+        )
+      );
     };
   }, [big, location, menuHidden]);
 
