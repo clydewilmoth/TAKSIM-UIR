@@ -13,27 +13,28 @@
     background-color: #EE1D23;
     position: fixed;
     left: 50%;
-    top: 30px;
+    top: 1.5em;
     transform: translate(-50%);
-}
-
-.logo{
-    height: 12vmax;
-    max-height: 10em;
-    filter: invert(92%) sepia(4%) saturate(571%) hue-rotate(319deg) brightness(103%) contrast(105%);
     z-index: 2;
     transition: all 0.3s ease-in-out;
 }
 
+.logo{
+    max-height: 15em;
+    filter: invert(92%) sepia(4%) saturate(571%) hue-rotate(319deg) brightness(103%) contrast(105%);
+    z-index: 3;
+    transition: all 0.3s ease-in-out;
+}
+
 .logoWrapper{
+    height: fit-content;
     width: auto;
-    padding: 0.5em 0.5em 0 0.5em;
     background-color: #EE1D23;
-    border-radius: 10px;
+    border-radius: 15px;
     position: fixed;
     left: 50%;
-    top: 30px;
+    top: 1.5em;
     transform: translate(-50%);
-    z-index: 2;
+    z-index: 3;
     transition: all 0.3s ease-in-out;
 }

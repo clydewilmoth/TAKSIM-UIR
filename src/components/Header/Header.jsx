@@ -1,38 +1,74 @@
 import css from "./styles.module.css";
-import logo from "../../assets/logo.svg";
 import Menu from "../Menu/Menu";
 import Language from "../Language/Language";
+import Logo from "../../assets/logo.svg";
+import SmallLogo from "../../assets/logo_s.svg";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { menuHidden } from "../Menu/Menu";
 
 function Header() {
-  const [big, setBig] = useState("18vmax");
+  const [big, setBig] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setBig(window.scrollY > 1 ? "0vmax" : "18vmax");
+      setBig(
+        window.scrollY < 1 && menuHidden && location.pathname === "/"
+          ? true
+          : false
+      );
     });
-
-    return () =>
+    window.addEventListener("click", () => {
+      setBig(
+        window.scrollY < 1 && menuHidden && location.pathname === "/"
+          ? true
+          : false
+      );
+    });
+    return () => {
       window.removeEventListener("scroll", () => {
-        setBig(window.scrollY > 1 ? "0vmax" : "18vmax");
+        setBig(
+          window.scrollY < 1 && menuHidden && location.pathname === "/"
+            ? true
+            : false
+        );
       });
-  }, []);
+      window.removeEventListener("click", () => {
+        setBig(
+          window.scrollY < 1 && menuHidden && location.pathname === "/"
+            ? true
+            : false
+        );
+      });
+    };
+  }, [big, location, menuHidden]);
 
   return (
     <div className={css.header}>
-      <div className={css.logoWrapper}>
+      <div
+        className={css.logoWrapper}
+        style={{
+          padding:
+            big && location.pathname === "/"
+              ? "1em 1em 0.5em 1em"
+              : "0.5em 0 0 0",
+        }}
+      >
         <Link to="/">
           <img
-            src={logo}
+            src={location.pathname === "/" ? Logo : SmallLogo}
             className={css.logo}
-            style={
-              big === "18vmax" ? { height: "12vmax" } : { height: "2.5em" }
-            }
+            style={{
+              height: big && location.pathname === "/" ? "25vw" : "2.5em",
+            }}
           />
         </Link>
       </div>
-      <div className={css.nav}>
+      <div
+        className={css.nav}
+        style={{ maxWidth: big && location.pathname === "/" ? "30em" : "15em" }}
+      >
         <Menu />
         <Language />
       </div>
