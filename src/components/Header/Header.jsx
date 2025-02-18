@@ -1,9 +1,9 @@
 import css from "./styles.module.css";
 import logo from "../../assets/logo.svg";
-import menu from "../../assets/menu.svg";
-import language from "../../assets/language.svg";
+import Menu from "../Menu/Menu";
+import Language from "../Language/Language";
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [big, setBig] = useState("18vmax");
@@ -33,8 +33,8 @@ function Header() {
         </Link>
       </div>
       <div className={css.nav}>
-        <img src={menu} className={css.menu} />
-        <img src={language} className={css.language} />
+        <Menu />
+        <Language />
       </div>
     </div>
   );

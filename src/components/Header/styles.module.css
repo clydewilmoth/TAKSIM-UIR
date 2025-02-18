@@ -37,15 +37,3 @@
     z-index: 2;
     transition: all 0.3s ease-in-out;
 }
-
-.menu{
-    height: 5vmax;
-    max-height: 3em;
-    filter: invert(92%) sepia(4%) saturate(571%) hue-rotate(319deg) brightness(103%) contrast(105%);
-}
-
-.language{
-    height: 5vmax;
-    max-height: 3em;
-    filter: invert(92%) sepia(4%) saturate(571%) hue-rotate(319deg) brightness(103%) contrast(105%);
-}
