@@ -1,5 +1,15 @@
 .menu{
-    height: 5vmax;
-    max-height: 3em;
+    background-color: black;
+    width: 70%;
+    height: 50vh;
+    position: fixed;
+    left: 50%;
+    top: 234234px;
+    transform: translate(-50%);
+    z-index: 4;
+}
+
+.button{
+    height: 2.5em;
     filter: invert(92%) sepia(4%) saturate(571%) hue-rotate(319deg) brightness(103%) contrast(105%);
 }

@@ -1,5 +1,4 @@
 .language{
-    height: 5vmax;
-    max-height: 3em;
+    height: 2.5em;
     filter: invert(92%) sepia(4%) saturate(571%) hue-rotate(319deg) brightness(103%) contrast(105%);
 }

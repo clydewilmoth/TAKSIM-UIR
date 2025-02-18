@@ -27,7 +27,7 @@ function Header() {
             src={logo}
             className={css.logo}
             style={
-              big === "18vmax" ? { height: "12vmax" } : { height: "5vmax" }
+              big === "18vmax" ? { height: "12vmax" } : { height: "2.5em" }
             }
           />
         </Link>

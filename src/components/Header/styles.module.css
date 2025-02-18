@@ -4,8 +4,9 @@
 
 .nav{
     width: 70%;
+    max-width: 30em;
     margin: 0 auto;
-    padding: 1vmax;
+    padding: 0.5em;
     border-radius: 100px;
     display: flex;
     justify-content: space-between;
@@ -26,8 +27,7 @@
 
 .logoWrapper{
     width: auto;
-    height: fit-content;
-    padding: 1vmax 1vmax 0.3vmax 1vmax;
+    padding: 0.5em 0.5em 0 0.5em;
     background-color: #EE1D23;
     border-radius: 10px;
     position: fixed;
