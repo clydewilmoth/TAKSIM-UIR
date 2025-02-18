@@ -1,0 +1,51 @@
+.header{
+    transition: all 0.3s ease-in-out;
+}
+
+.nav{
+    width: 70%;
+    margin: 0 auto;
+    padding: 1vmax;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #EE1D23;
+    position: fixed;
+    left: 50%;
+    top: 30px;
+    transform: translate(-50%);
+}
+
+.logo{
+    height: 12vmax;
+    max-height: 10em;
+    filter: invert(92%) sepia(4%) saturate(571%) hue-rotate(319deg) brightness(103%) contrast(105%);
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+.logoWrapper{
+    width: auto;
+    height: fit-content;
+    padding: 1vmax 1vmax 0.3vmax 1vmax;
+    background-color: #EE1D23;
+    border-radius: 10px;
+    position: fixed;
+    left: 50%;
+    top: 30px;
+    transform: translate(-50%);
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu{
+    height: 5vmax;
+    max-height: 3em;
+    filter: invert(92%) sepia(4%) saturate(571%) hue-rotate(319deg) brightness(103%) contrast(105%);
+}
+
+.language{
+    height: 5vmax;
+    max-height: 3em;
+    filter: invert(92%) sepia(4%) saturate(571%) hue-rotate(319deg) brightness(103%) contrast(105%);
+}
