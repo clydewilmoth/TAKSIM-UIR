@@ -6,6 +6,7 @@ import SmallLogo from "../../assets/logo_s.svg";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { menuHidden, menuSetHidden } from "../Menu/Menu";
+import { languageHidden, languageSetHidden } from "../Language/Language";
 
 function Header() {
   const [big, setBig] = useState(true);
@@ -13,20 +14,29 @@ function Header() {
 
   useEffect(() => {
     setBig(
-      window.scrollY < 1 && menuHidden && location.pathname === "/"
+      window.scrollY < 1 &&
+        menuHidden &&
+        languageHidden &&
+        location.pathname === "/"
         ? true
         : false
     );
     window.addEventListener("scroll", () =>
       setBig(
-        window.scrollY < 1 && menuHidden && location.pathname === "/"
+        window.scrollY < 1 &&
+          menuHidden &&
+          languageHidden &&
+          location.pathname === "/"
           ? true
           : false
       )
     );
     window.addEventListener("click", () =>
       setBig(
-        window.scrollY < 1 && menuHidden && location.pathname === "/"
+        window.scrollY < 1 &&
+          menuHidden &&
+          languageHidden &&
+          location.pathname === "/"
           ? true
           : false
       )
@@ -34,20 +44,26 @@ function Header() {
     return () => {
       window.removeEventListener("scroll", () =>
         setBig(
-          window.scrollY < 1 && menuHidden && location.pathname === "/"
+          window.scrollY < 1 &&
+            menuHidden &&
+            languageHidden &&
+            location.pathname === "/"
             ? true
             : false
         )
       );
       window.addEventListener("click", () =>
         setBig(
-          window.scrollY < 1 && menuHidden && location.pathname === "/"
+          window.scrollY < 1 &&
+            menuHidden &&
+            languageHidden &&
+            location.pathname === "/"
             ? true
             : false
         )
       );
     };
-  }, [big, location, menuHidden]);
+  }, [big, location, menuHidden, languageHidden]);
 
   return (
     <div className={css.header}>
@@ -67,7 +83,10 @@ function Header() {
             style={{
               height: big && location.pathname === "/" ? "25vw" : "2.5em",
             }}
-            onClick={() => menuSetHidden(true)}
+            onClick={() => {
+              menuSetHidden(true);
+              languageSetHidden(true);
+            }}
           />
         </Link>
       </div>

@@ -2,12 +2,15 @@ import menu from "../../assets/menu.svg";
 import css from "./styles.module.css";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Menu() {
   const [hidden, setHidden] = useState(true);
   const location = useLocation();
   menuHidden = hidden;
   menuSetHidden = setHidden;
+  const { t } = useTranslation();
+
   return (
     <>
       <img
@@ -29,7 +32,7 @@ function Menu() {
         >
           <div className={css.item} style={{ opacity: hidden ? 0.0 : 1.0 }}>
             <span className={css.un} onClick={() => setHidden(true)}>
-              Startseite
+              {t("startseite")}
             </span>
           </div>
         </Link>
@@ -39,7 +42,7 @@ function Menu() {
         >
           <div className={css.item} style={{ opacity: hidden ? 0.0 : 1.0 }}>
             <span className={css.un} onClick={() => setHidden(true)}>
-              Bestellen
+              {t("bestellen")}
             </span>
           </div>
         </Link>
@@ -49,7 +52,7 @@ function Menu() {
         >
           <div className={css.item} style={{ opacity: hidden ? 0.0 : 1.0 }}>
             <span className={css.un} onClick={() => setHidden(true)}>
-              Über Uns
+              {t("über uns")}
             </span>
           </div>
         </Link>
@@ -59,7 +62,7 @@ function Menu() {
         >
           <div className={css.item} style={{ opacity: hidden ? 0.0 : 1.0 }}>
             <span className={css.un} onClick={() => setHidden(true)}>
-              Kontakt
+              {t("kontakt")}
             </span>
           </div>
         </Link>
