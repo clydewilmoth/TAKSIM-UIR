@@ -10,7 +10,7 @@
 
 .wrapper{
     width: fit-content;
-    max-width: 40em;
+    max-width: 45em;
     height: fit-content;
     display: grid;  
     margin: 0 auto;
@@ -21,13 +21,24 @@
 @media screen and (width<=700px){
     .wrapper{
         grid-template-columns: auto auto;
+        row-gap: 3em;
+    }
+
+    .brand{
+        grid-column: span 2;
+        margin: 0 auto;
     }
 }
 
-@media screen and (width<=450px) {
+@media screen and (width<=480px) {
     .wrapper{
         grid-template-columns: auto;
         row-gap: 3em;
+    }
+
+    .brand{
+        grid-column: span 1;
+        margin: 0;
     }
 }
 
@@ -62,17 +73,16 @@
 }
 
 .brand{
+    display: flex;
+    align-items: start;
     width: fit-content;
+    height: auto;
     font-size: 2em;
     text-align: left;
     font-style: italic;
 }
 
-.brand .name{
-    font-style: normal;
-    font-weight: bold;
-}
-
-.brand .since{
-    font-size: 0.5em;
+.logo{
+    width: 5em;
+    filter: invert(57%) sepia(22%) saturate(581%) hue-rotate(322deg) brightness(94%) contrast(90%);
 }
