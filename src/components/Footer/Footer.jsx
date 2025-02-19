@@ -16,7 +16,7 @@ function Footer() {
           <div className={css.legalNotice}>{t("impressum")}</div>
         </div>
         <div className={css.contact}>
-          <div className={css.heading}>{t("kontakt")}</div>
+          <div className={css.heading}>{t("kontaktiere uns")}</div>
           <div className={css.phoneWrapper}>
             <a href="tel:+4962127939">
               <img src={Phone} className={css.phone} />
