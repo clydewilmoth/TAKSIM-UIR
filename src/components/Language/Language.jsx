@@ -8,7 +8,7 @@ function Language() {
   languageHidden = hidden;
   languageSetHidden = setHidden;
 
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   return (
     <>
@@ -33,7 +33,7 @@ function Language() {
           }}
         >
           <div className={i18n.language === "de" ? css.current : css.not}>
-            <span className={css.un}>{t("deutsch")}</span>
+            <span className={css.un}>Deutsch</span>
           </div>
         </div>
         <div
@@ -45,7 +45,7 @@ function Language() {
           }}
         >
           <div className={i18n.language === "tr" ? css.current : css.not}>
-            <span className={css.un}>{t("türkisch")}</span>
+            <span className={css.un}>Türkçe</span>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ function Language() {
           }}
         >
           <div className={i18n.language === "en" ? css.current : css.not}>
-            <span className={css.un}>{t("englisch")}</span>
+            <span className={css.un}>English</span>
           </div>
         </div>
       </div>

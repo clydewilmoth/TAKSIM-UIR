@@ -1,3 +1,7 @@
 * {
     font-family: "Lora", serif;
 }
+
+#root{
+    min-height: 100vh;
+}
