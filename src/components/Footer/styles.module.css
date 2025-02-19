@@ -1,0 +1,78 @@
+.footer{
+    width: 100%;
+    height: fit-content;
+    background-color: #4B2620;
+    text-align: center;
+    padding: 2.5em 0 2.5em 0;
+    color: #BB8378;
+    margin-top: auto;
+}
+
+.wrapper{
+    width: fit-content;
+    max-width: 40em;
+    height: fit-content;
+    display: grid;  
+    margin: 0 auto;
+    grid-template-columns: auto auto auto;
+    column-gap: 3em;
+}
+
+@media screen and (width<=700px){
+    .wrapper{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (width<=450px) {
+    .wrapper{
+        grid-template-columns: auto;
+        row-gap: 3em;
+    }
+}
+
+.dataPolicy, .contact{
+    width: fit-content;
+    display: grid;
+    flex-direction: column;
+    text-align: left;
+}
+
+.dataPolicy{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9em;
+}
+
+.heading{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.phone, .mail, .instagram{
+    width: 2em;
+    filter: invert(57%) sepia(22%) saturate(581%) hue-rotate(322deg) brightness(94%) contrast(90%);
+}
+
+.phoneWrapper, .mailWrapper, .instagramWrapper{
+    display: flex;
+    margin: 0.5em 0 0.5em 0;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.brand{
+    width: fit-content;
+    font-size: 2em;
+    text-align: left;
+    font-style: italic;
+}
+
+.brand .name{
+    font-style: normal;
+    font-weight: bold;
+}
+
+.brand .since{
+    font-size: 0.5em;
+}

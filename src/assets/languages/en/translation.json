@@ -5,5 +5,9 @@
     "kontakt": "Contact",
     "deutsch" : "German",
     "türkisch" : "Turkish",
-    "englisch" : "English"
+    "englisch" : "English",
+    "datenrichtlinien" : "Data Policy",
+    "datenschutz" : "Privacy Policy",
+    "impressum" : "Legal Notice",
+    "seit" : "since"
 }
