@@ -3,9 +3,10 @@ import { useTranslation } from "react-i18next";
 import Phone from "../../assets/phone.svg";
 import Mail from "../../assets/mail.svg";
 import Instagram from "../../assets/instagram.svg";
+import Logo from "../../assets/logo.svg";
 
 function Footer() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className={css.footer}>
@@ -42,10 +43,7 @@ function Footer() {
           </div>
         </div>
         <div className={css.brand}>
-          <div className={css.name}>Taksim </div>Baklavacı{" "}
-          <div className={css.since}>
-            {i18n.language === "tr" ? "1979" + t("seit") : t("seit") + " 1979"}
-          </div>
+          <img src={Logo} className={css.logo} />
         </div>
       </div>
     </div>
