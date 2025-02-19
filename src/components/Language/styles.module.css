@@ -6,7 +6,7 @@
     background-color: #EE1D23;
     width: fit-content;
     height: 100vh;
-    max-height: 6.3em;
+    max-height: fit-content;
     position: fixed;
     right: 0%;
     top: 0;
@@ -30,7 +30,8 @@
     padding: 0.5em;
     color: #FFF6F3;
     font-weight: bold;
-    text-align: center;
+    font-size: 1.2em;
+    text-align: right;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
