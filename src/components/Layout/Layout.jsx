@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
+import Footer from "../Footer/footer";
 import "../../i18n";
 
 function Layout() {
@@ -7,6 +8,7 @@ function Layout() {
     <div id="layout">
       <Header />
       <Outlet />
+      <Footer />
     </div>
   );
 }
