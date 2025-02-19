@@ -36,6 +36,10 @@
     transition: all 0.2s ease-in-out;
 }
 
+.item:hover{
+    cursor: pointer;
+}
+
 .current span{
     text-decoration: underline 0.2em #E7CD78;
 }
