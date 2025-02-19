@@ -72,7 +72,7 @@ function Header() {
         style={{
           padding:
             big && location.pathname === "/"
-              ? "1em 1em 0.5em 1em"
+              ? "0.5em min(1em, 2vw) min(0.5em, 0.5vw) min(1em, 2vw)"
               : "0.5em 0 0 0",
         }}
       >
