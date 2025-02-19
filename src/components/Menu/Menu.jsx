@@ -30,40 +30,50 @@ function Menu() {
           to="/"
           className={location.pathname === "/" ? css.current : css.not}
         >
-          <div className={css.item} style={{ opacity: hidden ? 0.0 : 1.0 }}>
-            <span className={css.un} onClick={() => setHidden(true)}>
-              {t("startseite")}
-            </span>
+          <div
+            className={css.item}
+            style={{ opacity: hidden ? 0.0 : 1.0 }}
+            onClick={() => setHidden(true)}
+          >
+            <span className={css.un}>{t("startseite")}</span>
           </div>
         </Link>
         <Link
           to="/bestellen"
           className={location.pathname === "/bestellen" ? css.current : css.not}
         >
-          <div className={css.item} style={{ opacity: hidden ? 0.0 : 1.0 }}>
-            <span className={css.un} onClick={() => setHidden(true)}>
-              {t("bestellen")}
-            </span>
+          <div
+            className={css.item}
+            style={{ opacity: hidden ? 0.0 : 1.0 }}
+            onClick={() => setHidden(true)}
+          >
+            <span className={css.un}>{t("bestellen")}</span>
           </div>
         </Link>
         <Link
           to="/überuns"
-          className={location.pathname === "/überuns" ? css.current : css.not}
+          className={
+            location.pathname === "/%C3%BCberuns" ? css.current : css.not
+          }
         >
-          <div className={css.item} style={{ opacity: hidden ? 0.0 : 1.0 }}>
-            <span className={css.un} onClick={() => setHidden(true)}>
-              {t("über uns")}
-            </span>
+          <div
+            className={css.item}
+            style={{ opacity: hidden ? 0.0 : 1.0 }}
+            onClick={() => setHidden(true)}
+          >
+            <span className={css.un}>{t("über uns")}</span>
           </div>
         </Link>
         <Link
           to="/kontakt"
           className={location.pathname === "/kontakt" ? css.current : css.not}
         >
-          <div className={css.item} style={{ opacity: hidden ? 0.0 : 1.0 }}>
-            <span className={css.un} onClick={() => setHidden(true)}>
-              {t("kontakt")}
-            </span>
+          <div
+            className={css.item}
+            style={{ opacity: hidden ? 0.0 : 1.0 }}
+            onClick={() => setHidden(true)}
+          >
+            <span className={css.un}>{t("kontakt")}</span>
           </div>
         </Link>
       </div>
