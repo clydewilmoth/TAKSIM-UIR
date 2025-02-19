@@ -1,5 +1,6 @@
 import css from "./styles.module.css";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import Phone from "../../assets/phone.svg";
 import Mail from "../../assets/mail.svg";
 import Instagram from "../../assets/instagram.svg";
@@ -43,7 +44,9 @@ function Footer() {
           </div>
         </div>
         <div className={css.brand}>
-          <img src={Logo} className={css.logo} />
+          <Link to="/">
+            <img src={Logo} className={css.logo} />
+          </Link>
         </div>
       </div>
     </div>
