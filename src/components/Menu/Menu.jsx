@@ -47,8 +47,8 @@ function Menu() {
           </div>
         </Link>
         <Link
-          to="/info"
-          className={location.pathname === "/info" ? css.current : css.not}
+          to="/überuns"
+          className={location.pathname === "/überuns" ? css.current : css.not}
         >
           <div className={css.item} style={{ opacity: hidden ? 0.0 : 1.0 }}>
             <span className={css.un} onClick={() => setHidden(true)}>
