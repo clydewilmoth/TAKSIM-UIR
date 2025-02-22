@@ -1,10 +1,10 @@
 .footer{
     width: 100%;
     height: fit-content;
-    background-color: #4B2620;
+    background-color: #EE1D23;
     text-align: center;
     padding: 2.5em 0 2.5em 0;
-    color: #BB8378;
+    color: #FFF6F3;
     margin-top: auto;
 }
 
@@ -62,7 +62,9 @@
 
 .phone, .mail, .instagram{
     width: 2em;
-    filter: invert(57%) sepia(22%) saturate(581%) hue-rotate(322deg) brightness(94%) contrast(90%);
+    /*filter: invert(57%) sepia(22%) saturate(581%) hue-rotate(322deg) brightness(94%) contrast(90%);
+    filter: invert(21%) sepia(90%) saturate(3232%) hue-rotate(346deg) brightness(92%) contrast(104%);*/
+    filter: invert(92%) sepia(2%) saturate(1754%) hue-rotate(317deg) brightness(104%) contrast(106%);
 }
 
 .phoneWrapper, .mailWrapper, .instagramWrapper{
@@ -84,5 +86,5 @@
 
 .logo{
     width: 5em;
-    filter: invert(57%) sepia(22%) saturate(581%) hue-rotate(322deg) brightness(94%) contrast(90%);
+    filter: invert(92%) sepia(2%) saturate(1754%) hue-rotate(317deg) brightness(104%) contrast(106%);
 }
