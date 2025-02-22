@@ -36,10 +36,10 @@
 .headingContainer{
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    justify-content: space-evenly;
+    height: 60vh;
+    justify-content: space-between;
     align-items: center;
-    padding: 3em 0 3em 0;
+    padding-top: 20vh;
     background-color: #FFF6F3;
 }
 
