@@ -1,0 +1,74 @@
+.dishes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
+
+#flip{
+    transform: rotate(180deg);
+}
+
+.decor{
+    width: calc(10em + 20vw);
+    max-width: 20em;
+    filter: invert(92%) sepia(38%) saturate(717%) hue-rotate(324deg) brightness(96%) contrast(88%);
+}
+
+.card{
+    cursor: pointer;
+    position: relative;
+    width: 10em;
+    height: 10em;
+}
+
+.image, .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+
+}
+
+.image{
+    animation: rotate linear;
+    animation-timeline: view();
+    width: 90%;
+    height: 90%;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.info span{
+    transition: all 0.3s ease-in-out;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #320405;
+    font-style: italic;
+}
+
+.category{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5em;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(60deg);
+    }
+}

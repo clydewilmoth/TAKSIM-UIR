@@ -1,6 +1,7 @@
 import css from "./styles.module.css";
 import Intro from "../../../assets/intro.mp4";
 import { useTranslation } from "react-i18next";
+import Dishes from "../../Dishes/Dishes";
 
 function Home() {
   const { t } = useTranslation();
@@ -26,6 +27,7 @@ function Home() {
           CONFISERIE
         </div>
       </div>
+      <Dishes />
     </div>
   );
 }

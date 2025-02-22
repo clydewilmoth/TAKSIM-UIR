@@ -1,4 +1,5 @@
 red: #EE1D23
+dark red: #320405
 light brown: #BB8378
 cream: #FFF6F3
 brown: #4B2620
