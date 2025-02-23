@@ -20,8 +20,7 @@ function Language() {
       <div
         className={css.language}
         style={{
-          visibility: hidden ? "hidden" : "visible",
-          height: hidden ? "1.5em" : "100vh",
+          transform: hidden ? "scale(0)" : "scale(1)",
         }}
       >
         <div
