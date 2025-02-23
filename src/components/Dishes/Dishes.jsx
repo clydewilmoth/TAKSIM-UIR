@@ -7,19 +7,25 @@ import { useState } from "react";
 function Dishes() {
   return (
     <div className={css.dishes}>
-      <img src={Decor} className={css.decor} />
+      <a id="süßware">
+        <img src={Decor} className={css.decor} />
+      </a>
       <div className={css.category}>
         <Card image={Bread} info={"Yummy"} />
         <Card image={Bread} info={"Yummy"} />
         <Card image={Bread} info={"Yummy"} />
       </div>
-      <img src={DecorHr} className={css.decor} />
+      <a id="torten">
+        <img src={DecorHr} className={css.decor} />
+      </a>
       <div className={css.category}>
         <Card image={Bread} info={"Yummy"} />
         <Card image={Bread} info={"Yummy"} />
         <Card image={Bread} info={"Yummy"} />
       </div>
-      <img src={DecorHr} className={css.decor} id={css.flip} />
+      <a id="backware">
+        <img src={DecorHr} className={css.decor} id={css.flip} />
+      </a>
       <div className={css.category}>
         <Card image={Bread} info={"Yummy"} />
         <Card image={Bread} info={"Yummy"} />
