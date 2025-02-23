@@ -21,30 +21,29 @@ function Home() {
         <source src={Intro} type="video/mp4" />
       </video>
       <div className={css.headingContainer}>
-        <a className={css.headingLink} href="#süßware">
-          <div className={css.heading}>SÜßWARE</div>
+        <a className={css.headingLink} href="#süßwaren">
+          <div className={css.heading}>{t("SÜßWAREN")}</div>
         </a>
         <a className={css.headingLink} href="#torten">
           <div className={css.heading} id={css.kadayif}>
-            TORTEN
+            {t("TORTEN")}
           </div>
         </a>
-        <a className={css.headingLink} href="#backware">
+        <a className={css.headingLink} href="#backwaren">
           <div className={css.heading} id={css.havuc}>
-            BACKWARE
+            {t("BACKWAREN")}
           </div>
         </a>
       </div>
       <Dishes />
       <div className={css.order}>
         <Link className={css.link} to="/bestellen">
-          <div className={css.textHeading}>Bestellen</div>
+          <div className={css.textHeading}>{t("bestellen")}</div>
         </Link>
         <div className={css.details}>
-          Stellen Sie sich jetzt ganz einfach Ihre eigene Bestellung aus allen
-          aufgeführten Produkten zusammen. Wenn Ihre Bestellung abholbereit ist,
-          werden Sie dann per Telefonat oder Email benachrichtigt und können
-          direkt beim Abholen bar bezahlen.
+          {t(
+            "Stellen Sie sich jetzt ganz einfach Ihre eigene Bestellung aus allen aufgeführten Produkten zusammen. Wenn Ihre Bestellung abholbereit ist, werden Sie dann per Telefonat oder Email benachrichtigt und können direkt beim Abholen bar bezahlen."
+          )}
         </div>
       </div>
       <div className={css.location}>
@@ -54,14 +53,15 @@ function Home() {
           target="_blank"
           className={css.mapsLink}
         >
-          <div className={css.textHeading}>Standort</div>
+          <div className={css.textHeading}>{t("Standort")}</div>
           <div className={css.details}>
             <span className={css.increaseFontSize}>H3 1, 68159 Mannheim</span>
           </div>
         </a>
         <div className={css.details}>
-          Kommen Sie vorbei und überzeugen Sie sich selbst von unserer
-          türkischen Meisterbackkunst
+          {t(
+            "Kommen Sie vorbei und überzeugen Sie sich selbst von unserer türkischen Meisterbackkunst."
+          )}
         </div>
         <img src={Decor} className={css.decor} id={css.flip} />
       </div>

@@ -44,7 +44,7 @@
 }
 
 .heading{
-    font-size: calc(3em + 2vw);
+    font-size: calc(2.5em + 2vw);
     font-weight: 500;
     color: #EE1D23;
     animation: focus linear;

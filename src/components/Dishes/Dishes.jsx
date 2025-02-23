@@ -7,7 +7,7 @@ import { useState } from "react";
 function Dishes() {
   return (
     <div className={css.dishes}>
-      <a id="süßware">
+      <a id="süßwaren">
         <img src={Decor} className={css.decor} />
       </a>
       <div className={css.category}>
@@ -23,7 +23,7 @@ function Dishes() {
         <Card image={Bread} info={"Yummy"} />
         <Card image={Bread} info={"Yummy"} />
       </div>
-      <a id="backware">
+      <a id="backwaren">
         <img src={DecorHr} className={css.decor} id={css.flip} />
       </a>
       <div className={css.category}>
