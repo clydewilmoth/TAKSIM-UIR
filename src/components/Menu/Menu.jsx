@@ -22,19 +22,14 @@ function Menu() {
       <div
         className={css.menu}
         style={{
-          visibility: hidden ? "hidden" : "visible",
-          height: hidden ? "1.5em" : "100vh",
+          transform: hidden ? "scale(0)" : "scale(1)",
         }}
       >
         <Link
           to="/"
           className={location.pathname === "/" ? css.current : css.not}
         >
-          <div
-            className={css.item}
-            style={{ opacity: hidden ? 0.0 : 1.0 }}
-            onClick={() => setHidden(true)}
-          >
+          <div className={css.item} onClick={() => setHidden(true)}>
             <span className={css.un}>{t("startseite")}</span>
           </div>
         </Link>
@@ -42,11 +37,7 @@ function Menu() {
           to="/bestellen"
           className={location.pathname === "/bestellen" ? css.current : css.not}
         >
-          <div
-            className={css.item}
-            style={{ opacity: hidden ? 0.0 : 1.0 }}
-            onClick={() => setHidden(true)}
-          >
+          <div className={css.item} onClick={() => setHidden(true)}>
             <span className={css.un}>{t("bestellen")}</span>
           </div>
         </Link>
@@ -56,11 +47,7 @@ function Menu() {
             location.pathname === "/%C3%BCberuns" ? css.current : css.not
           }
         >
-          <div
-            className={css.item}
-            style={{ opacity: hidden ? 0.0 : 1.0 }}
-            onClick={() => setHidden(true)}
-          >
+          <div className={css.item} onClick={() => setHidden(true)}>
             <span className={css.un}>{t("über uns")}</span>
           </div>
         </Link>
@@ -68,11 +55,7 @@ function Menu() {
           to="/kontakt"
           className={location.pathname === "/kontakt" ? css.current : css.not}
         >
-          <div
-            className={css.item}
-            style={{ opacity: hidden ? 0.0 : 1.0 }}
-            onClick={() => setHidden(true)}
-          >
+          <div className={css.item} onClick={() => setHidden(true)}>
             <span className={css.un}>{t("kontakt")}</span>
           </div>
         </Link>

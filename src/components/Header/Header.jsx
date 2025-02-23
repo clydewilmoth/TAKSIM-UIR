@@ -70,9 +70,17 @@ function Header() {
       <div
         className={css.logoWrapper}
         style={{
+          transition:
+            location.pathname === "/" ? "all 0.3s ease-in-out" : "none",
+          width:
+            big && location.pathname === "/"
+              ? "40vw"
+              : location.pathname === "/"
+              ? "4em"
+              : "2.5em",
           padding:
             big && location.pathname === "/"
-              ? "0.5em min(1em, 2vw) min(0.5em, 0.5vw) min(1em, 2vw)"
+              ? "0.5em 0.5em 0.2em 0.5em"
               : "0.5em 0 0 0",
         }}
       >
@@ -80,9 +88,6 @@ function Header() {
           <img
             src={location.pathname === "/" ? Logo : SmallLogo}
             className={css.logo}
-            style={{
-              height: big && location.pathname === "/" ? "25vw" : "2.5em",
-            }}
             onClick={() => {
               menuSetHidden(true);
               languageSetHidden(true);
@@ -92,7 +97,12 @@ function Header() {
       </div>
       <div
         className={css.nav}
-        style={{ maxWidth: big && location.pathname === "/" ? "30em" : "15em" }}
+        style={{
+          width:
+            big && location.pathname === "/"
+              ? "max(calc(7em + 40vw), 14em)"
+              : "14em",
+        }}
       >
         <Menu />
         <Language />

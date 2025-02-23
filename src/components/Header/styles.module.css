@@ -3,8 +3,7 @@
 }
 
 .nav{
-    width: 70%;
-    max-width: 30em;
+    width: calc(7em + 25vw);
     margin: 0 auto;
     padding: 0.5em;
     border-radius: 10px;
@@ -15,26 +14,27 @@
     left: 50%;
     top: 1.5em;
     transform: translate(-50%);
-    z-index: 2;
+    z-index: 3;
     transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
 }
 
 .logo{
-    max-height: 15em;
+    height: auto;
     filter: invert(92%) sepia(4%) saturate(571%) hue-rotate(319deg) brightness(103%) contrast(105%);
-    z-index: 3;
     transition: all 0.3s ease-in-out;
 }
 
 .logoWrapper{
+    width: 25vw;
     height: fit-content;
-    width: auto;
     background-color: #EE1D23;
     border-radius: 15px;
     position: fixed;
     left: 50%;
     top: 1.5em;
-    transform: translate(-50%);
-    z-index: 3;
+    translate: -50%;
+    z-index: 4;
     transition: all 0.3s ease-in-out;
+    padding: 0.5em 0.5em 0.2em 0.5em;
 }
