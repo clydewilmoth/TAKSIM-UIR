@@ -4,9 +4,9 @@ import DecorHr from "../../assets/decor_hr.svg";
 import Bread from "../../assets/bread.png";
 import { useState } from "react";
 
-function Dishes() {
+function FoodMenu() {
   return (
-    <div className={css.dishes}>
+    <div className={css.menu}>
       <a id="süßwaren">
         <img src={Decor} className={css.decor} />
       </a>
@@ -58,4 +58,4 @@ function Card({ image, info }) {
   );
 }
 
-export default Dishes;
+export default FoodMenu;

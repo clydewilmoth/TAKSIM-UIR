@@ -2,7 +2,7 @@ import css from "./styles.module.css";
 import Intro from "../../../assets/intro.mp4";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import Dishes from "../../Dishes/Dishes";
+import FoodMenu from "../../FoodMenu/FoodMenu";
 import Decor from "../../../assets/decor2.svg";
 
 function Home() {
@@ -35,7 +35,7 @@ function Home() {
           </div>
         </a>
       </div>
-      <Dishes />
+      <FoodMenu />
       <div className={css.order}>
         <Link className={css.link} to="/bestellen">
           <div className={css.textHeading}>{t("bestellen")}</div>
