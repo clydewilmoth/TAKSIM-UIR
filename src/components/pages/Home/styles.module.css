@@ -57,6 +57,7 @@
     animation: focus linear;
     animation-timeline: view();
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .heading:hover{
@@ -64,7 +65,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-.headingLink, .link, .mapsLink{
+.link, .mapsLink{
     text-decoration: none;
     font-weight: bold;
 }

@@ -21,19 +21,38 @@ function Home() {
         <source src={Intro} type="video/mp4" />
       </video>
       <div className={css.headingContainer}>
-        <a className={css.headingLink} href="#süßwaren">
-          <div className={css.heading}>{t("SÜßWAREN")}</div>
-        </a>
-        <a className={css.headingLink} href="#torten">
-          <div className={css.heading} id={css.kadayif}>
-            {t("TORTEN")}
-          </div>
-        </a>
-        <a className={css.headingLink} href="#backwaren">
-          <div className={css.heading} id={css.havuc}>
-            {t("BACKWAREN")}
-          </div>
-        </a>
+        <div
+          className={css.heading}
+          onClick={() => {
+            document
+              .getElementById("süßwaren")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          {t("SÜßWAREN")}
+        </div>
+
+        <div
+          className={css.heading}
+          onClick={() => {
+            document
+              .getElementById("torten")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          {t("TORTEN")}
+        </div>
+
+        <div
+          className={css.heading}
+          onClick={() => {
+            document
+              .getElementById("backwaren")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          {t("BACKWAREN")}
+        </div>
       </div>
       <FoodMenu />
       <Link to="/bestellen">
