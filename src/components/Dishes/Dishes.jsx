@@ -43,18 +43,16 @@ function Card({ image, info }) {
     <div className={css.card}>
       <div
         className={css.info}
-        style={{
-          visibility: infoHidden ? "hidden" : "visible",
-          backgroundColor: infoHidden ? "transparent" : "#FFF6F3",
-        }}
+        style={{ transform: infoHidden ? "scale(0)" : "scale(1)" }}
         onClick={() => setInfoHidden(true)}
       >
-        <span style={{ opacity: infoHidden ? 0.0 : 1.0 }}>{info}</span>
+        <span>{info}</span>
       </div>
       <img
         src={image}
         className={css.image}
         onClick={() => setInfoHidden(infoHidden ? false : true)}
+        style={{ transform: infoHidden ? "scale(1)" : "scale(0)" }}
       />
     </div>
   );
