@@ -62,8 +62,6 @@
 
 .phone, .mail, .instagram{
     width: 2em;
-    /*filter: invert(57%) sepia(22%) saturate(581%) hue-rotate(322deg) brightness(94%) contrast(90%);
-    filter: invert(21%) sepia(90%) saturate(3232%) hue-rotate(346deg) brightness(92%) contrast(104%);*/
     filter: invert(92%) sepia(2%) saturate(1754%) hue-rotate(317deg) brightness(104%) contrast(106%);
 }
 
