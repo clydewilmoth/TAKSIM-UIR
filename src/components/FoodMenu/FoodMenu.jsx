@@ -43,7 +43,7 @@ function Card({ image, info }) {
     <div className={css.card}>
       <div
         className={css.info}
-        style={{ transform: infoHidden ? "scale(0)" : "scale(1)" }}
+        style={{ scale: infoHidden ? "0" : "1" }}
         onClick={() => setInfoHidden(true)}
       >
         <span>{info}</span>
@@ -52,7 +52,7 @@ function Card({ image, info }) {
         src={image}
         className={css.image}
         onClick={() => setInfoHidden(infoHidden ? false : true)}
-        style={{ transform: infoHidden ? "scale(1)" : "scale(0)" }}
+        style={{ scale: infoHidden ? "1" : "0" }}
       />
     </div>
   );

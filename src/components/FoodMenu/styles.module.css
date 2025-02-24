@@ -34,6 +34,8 @@
 .image{
     width: 90%;
     height: 90%;
+    animation: rotate linear;
+    animation-timeline: view();
 }
 
 .info{
@@ -62,9 +64,9 @@
 
 @keyframes rotate {
     0%{
-        transform: rotate(0);
+        rotate: 0deg;
     }
     100%{
-        transform: rotate(60deg);
+        rotate: 60deg;
     }
 }
