@@ -6,7 +6,6 @@ import Layout from "./components/Layout/Layout";
 import Home from "./components/pages/Home/Home";
 import About from "./components/pages/About/About";
 import Order from "./components/pages/Order/Order";
-import Contact from "./components/pages/Contact/Contact";
 import Admin from "./components/pages/Admin/Admin";
 import PageNotFound from "./components/pages/PageNotFound/PageNotFound";
 
@@ -18,7 +17,6 @@ createRoot(document.getElementById("root")).render(
           <Route index element={<Home />} />
           <Route path="überuns" element={<About />} />
           <Route path="bestellen" element={<Order />} />
-          <Route path="kontakt" element={<Contact />} />
           <Route path="admin" element={<Admin />} />
           <Route path="*" element={<PageNotFound />} />
         </Route>

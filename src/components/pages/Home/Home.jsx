@@ -36,34 +36,44 @@ function Home() {
         </a>
       </div>
       <FoodMenu />
-      <div className={css.order}>
-        <Link className={css.link} to="/bestellen">
-          <div className={css.textHeading}>{t("bestellen")}</div>
-        </Link>
-        <div className={css.details}>
-          {t(
-            "Stellen Sie sich jetzt ganz einfach Ihre eigene Bestellung aus allen aufgeführten Produkten zusammen. Wenn Ihre Bestellung abholbereit ist, werden Sie dann per Telefonat oder Email benachrichtigt und können direkt beim Abholen bar bezahlen."
-          )}
+      <Link to="/bestellen">
+        <div className={css.slider}>
+          <div className={css.slideTrack}>
+            <div className={css.slide}>BESTELLEN</div>
+            <div className={css.slide}>ABHOLEN</div>
+            <div className={css.slide} id={css.smallDevice}>
+              BESTELLEN
+            </div>
+            <div className={css.slide} id={css.smallDevice}>
+              ABHOLEN
+            </div>
+          </div>
+          <div className={css.slideTrackHidden}>
+            <div className={css.slide}>BESTELLEN</div>
+            <div className={css.slide}>ABHOLEN</div>
+            <div className={css.slide} id={css.smallDevice}>
+              BESTELLEN
+            </div>
+            <div className={css.slide} id={css.smallDevice}>
+              ABHOLEN
+            </div>
+          </div>
         </div>
-      </div>
+      </Link>
+
       <div className={css.location}>
-        <img src={Decor} className={css.decor} />
         <a
           href="https://www.google.com/maps/place/Taksim+Baklavaci/@49.4906527,8.4639124,1393m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4797cc24dc58cd8f:0x8477dbef2ed4c00c!8m2!3d49.4906492!4d8.4664873!16s%2Fg%2F11c44pc18b?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"
           target="_blank"
           className={css.mapsLink}
         >
-          <div className={css.textHeading}>{t("Standort")}</div>
-          <div className={css.details}>
-            <span className={css.increaseFontSize}>H3 1, 68159 Mannheim</span>
-          </div>
+          <img src={Decor} className={css.decor} />
+
+          <div className={css.textHeading}>H3 1, 68159 Mannheim</div>
+
+          <div className={css.details}></div>
+          <img src={Decor} className={css.decor} id={css.flip} />
         </a>
-        <div className={css.details}>
-          {t(
-            "Kommen Sie vorbei und überzeugen Sie sich selbst von unserer türkischen Meisterbackkunst."
-          )}
-        </div>
-        <img src={Decor} className={css.decor} id={css.flip} />
       </div>
     </div>
   );

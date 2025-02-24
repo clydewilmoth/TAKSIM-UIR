@@ -25,7 +25,13 @@
     0%{
         filter: blur(0.3em);
     }
+    40%{
+        filter: blur(0);
+    }
     50%{
+        filter: blur(0);
+    }
+    60%{
         filter: blur(0);
     }
     100%{
@@ -39,16 +45,23 @@
     height: 60vh;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20vh;
+    padding: 20vh 0 0 0;
     background-color: #FFF6F3;
+    scroll-behavior: smooth;
 }
 
 .heading{
     font-size: calc(2.5em + 2vw);
-    font-weight: 500;
+    font-weight: bold;
     color: #EE1D23;
     animation: focus linear;
     animation-timeline: view();
+    transition: all 0.3s ease-in-out;
+}
+
+.heading:hover{
+    scale: 0.9;
+    transition: all 0.3s ease-in-out;
 }
 
 .headingLink, .link, .mapsLink{
@@ -56,49 +69,40 @@
     font-weight: bold;
 }
 
-.order, .location{
+.location{
     display: flex;
     flex-direction: column;
     gap: 0.5em;
 }
 
-.order{
-    padding: 4em 0 10vh 0;
-}
-
 .textHeading{
-    font-size: calc(3em);
-    color: #EE1D23;
+    font-size: calc(1.5em + 0.5vw);
+    color: #FFF6F3;
     text-align: center;
     height: fit-content;
     width: fit-content;
     margin: 0 auto;
+    
 }
 
-.link, .mapsLink{
+.mapsLink:hover{
+    scale: 0.9;
+    transition: all 0.3s ease-in-out;
+}
+
+.mapsLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
     width: fit-content;
     margin: 0 auto;
 }
 
-.details{
-    text-align: center;
-    width: 15em;
-    margin: 0 auto;
-    color: #EE1D23;
-    font-size: 1.2em;
-}
-
-.increaseFontSize{
-    font-size: 1.3em;
-}
-
 .location{
-    padding: 10vh 0 10vh 0;
+    padding: 20vh 0 20vh 0;
     background-color: #EE1D23;
-}
-
-.location .textHeading, .location .details, .locationDetails{
-    color: #FFF6F3;
+    transition: all 0.3s ease-in-out;
 }
 
 #flip{
@@ -111,4 +115,75 @@
     filter: invert(92%) sepia(38%) saturate(717%) hue-rotate(324deg) brightness(96%) contrast(88%);
     margin: 0 auto;
     padding: 0 0 2em 0;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.slider {
+	background: #EE1D23;
+	height:15vh;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+    display: flex;
+    align-items: center;
+    
+
+    &:hover .slideTrack, &:hover .slideTrackHidden{
+        animation-play-state: paused;
+        scale: 0.9;
+        transition: all 0.3s ease-in-out;
+    } 
+}
+
+.slideTrack{
+    animation: 10s slide linear infinite;
+}
+
+.slideTrack, .slideTrackHidden{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.slideTrackHidden{
+    transform: translateX(100%);
+    animation: 10s slideHidden linear infinite;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideHidden {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.slide{
+    color: #FFF6F3;
+    font-size: calc(1em + 1vw);
+    font-weight: bold;
+}
+
+@media screen and (width<1300px) {
+    #smallDevice{
+        display: none;
+    }
 }

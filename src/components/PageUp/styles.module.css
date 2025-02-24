@@ -1,0 +1,23 @@
+.pageUp{
+    position: fixed;
+    bottom: calc(3em + 3vw);
+    right: calc(2em + 2vw);
+    height: 2.5em;
+    z-index: 3;
+    background-color: #FFF6F3;
+    border-radius: 100%;
+    outline: 2px solid #EE1D23;
+    outline-offset: -1px;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.pageUp:hover{
+    translate: 0 -10%;
+}
+
+.arrowUp{
+    height: 2.5em;
+    filter: invert(22%) sepia(64%) saturate(7469%) hue-rotate(350deg) brightness(96%) contrast(95%);
+}

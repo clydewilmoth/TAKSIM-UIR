@@ -51,14 +51,6 @@ function Menu() {
             <span className={css.un}>{t("über uns")}</span>
           </div>
         </Link>
-        <Link
-          to="/kontakt"
-          className={location.pathname === "/kontakt" ? css.current : css.not}
-        >
-          <div className={css.item} onClick={() => setHidden(true)}>
-            <span className={css.un}>{t("kontakt")}</span>
-          </div>
-        </Link>
       </div>
     </>
   );
