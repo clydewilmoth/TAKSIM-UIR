@@ -72,11 +72,11 @@
     flex-wrap: wrap;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
     from{
         rotate: 0deg;
     }
     to{
         rotate: 60deg;
     }
-}
+} */

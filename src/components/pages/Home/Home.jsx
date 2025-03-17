@@ -59,22 +59,22 @@ function Home() {
         <div className={css.slider}>
           <div className={css.slideTrack}>
             <div className={css.slide}>BESTELLEN</div>
-            <div className={css.slide}>ABHOLEN</div>
+            <div className={css.slide}>BESTELLEN</div>
             <div className={css.slide} id={css.smallDevice}>
               BESTELLEN
             </div>
             <div className={css.slide} id={css.smallDevice}>
-              ABHOLEN
+              BESTELLEN
             </div>
           </div>
           <div className={css.slideTrackHidden}>
             <div className={css.slide}>BESTELLEN</div>
-            <div className={css.slide}>ABHOLEN</div>
+            <div className={css.slide}>BESTELLEN</div>
             <div className={css.slide} id={css.smallDevice}>
               BESTELLEN
             </div>
             <div className={css.slide} id={css.smallDevice}>
-              ABHOLEN
+              BESTELLEN
             </div>
           </div>
         </div>
