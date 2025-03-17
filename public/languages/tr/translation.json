@@ -1,20 +1,14 @@
 {
-    "startseite": "Ana sayfa",
-    "bestellen": "Sipariş",
-    "über uns": "Hakkımızda",
-    "kontakt": "İletişim",
-    "deutsch" : "Almanca",
-    "türkisch" : "Türkçe",
-    "englisch" : "İngilizce",
-    "datenrichtlinien" : "Veri Politikaları",
-    "datenschutz" : "Veri Koruması",
-    "impressum" : "İmza",
-    "kontaktiere uns" : "Bize ulaşın",
+    "Startseite": "Ana sayfa",
+    "Bestellen": "Sipariş",
+    "Über uns": "Hakkımızda",
+    "Datenrichtlinien" : "Veri Politikaları",
+    "Datenschutz" : "Veri Koruması",
+    "Impressum" : "İmza",
+    "Kontaktiere uns" : "Bize ulaşın",
     "SÜßWAREN" : "ŞEKERLEME",
     "BACKWAREN" : "HAMUR İŞİ",
     "TORTEN" : "PASTA",
     "Standort" : "Konum",
-    "Stellen Sie sich jetzt ganz einfach Ihre eigene Bestellung aus allen aufgeführten Produkten zusammen. Wenn Ihre Bestellung abholbereit ist, werden Sie dann per Telefonat oder Email benachrichtigt und können direkt beim Abholen bar bezahlen." : "Artık listelenen tüm ürünlerden kendi siparişinizi kolayca oluşturabilirsiniz. Siparişiniz teslim alınmaya hazır olduğunda telefon veya e-posta yoluyla bilgilendirileceksiniz ve ödemeyi doğrudan tahsilat sırasında nakit olarak yapabilirsiniz.",
-    "Kommen Sie vorbei und überzeugen Sie sich selbst von unserer türkischen Meisterbackkunst." : "Gelin ve Türk usta aşçılık becerilerimizi kendiniz görün."
-
+    "BESTELLEN" : "SİPARİŞ"
 }

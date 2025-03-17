@@ -30,7 +30,7 @@ function Menu() {
           className={location.pathname === "/" ? css.current : css.not}
         >
           <div className={css.item} onClick={() => setHidden(true)}>
-            <span className={css.un}>{t("startseite")}</span>
+            <span className={css.un}>{t("Startseite")}</span>
           </div>
         </Link>
         <Link
@@ -38,7 +38,7 @@ function Menu() {
           className={location.pathname === "/bestellen" ? css.current : css.not}
         >
           <div className={css.item} onClick={() => setHidden(true)}>
-            <span className={css.un}>{t("bestellen")}</span>
+            <span className={css.un}>{t("Bestellen")}</span>
           </div>
         </Link>
         <Link
@@ -48,7 +48,7 @@ function Menu() {
           }
         >
           <div className={css.item} onClick={() => setHidden(true)}>
-            <span className={css.un}>{t("über uns")}</span>
+            <span className={css.un}>{t("Über uns")}</span>
           </div>
         </Link>
       </div>

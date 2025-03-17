@@ -54,8 +54,6 @@
     font-size: calc(2.5em + 2vw);
     font-weight: bold;
     color: #EE1D23;
-    animation: focus linear;
-    animation-timeline: view();
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
@@ -83,12 +81,11 @@
     height: fit-content;
     width: fit-content;
     margin: 0 auto;
-    
-}
-
-.mapsLink:hover{
-    scale: 0.9;
     transition: all 0.3s ease-in-out;
+    &:hover{
+        scale: 0.9;
+        transition: all 0.3s ease-in-out;
+    }
 }
 
 .mapsLink{
@@ -101,7 +98,7 @@
 }
 
 .location{
-    padding: 20vh 0 20vh 0;
+    padding: 15vh 0 15vh 0;
     background-color: #EE1D23;
     transition: all 0.3s ease-in-out;
 }
@@ -111,8 +108,8 @@
 }
 
 .decor{
-    width: calc(10em + 20vw);
-    max-width: 20em;
+    width: calc(8em + 15vw);
+    max-width: 15em;
     filter: invert(92%) sepia(38%) saturate(717%) hue-rotate(324deg) brightness(96%) contrast(88%);
     margin: 0 auto;
     padding: 0 0 2em 0;
@@ -124,14 +121,13 @@
 }
 
 .slider {
-	background: #EE1D23;
+	background: #E7CD78;
 	height:15vh;
 	overflow:hidden;
 	position: relative;
 	width: 100%;
     display: flex;
     align-items: center;
-    
 
     &:hover .slideTrack, &:hover .slideTrackHidden{
         animation-play-state: paused;
@@ -181,6 +177,7 @@
     color: #FFF6F3;
     font-size: calc(1em + 1vw);
     font-weight: bold;
+    text-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (width<1300px) {

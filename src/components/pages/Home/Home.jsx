@@ -58,41 +58,39 @@ function Home() {
       <Link to="/bestellen">
         <div className={css.slider}>
           <div className={css.slideTrack}>
-            <div className={css.slide}>BESTELLEN</div>
-            <div className={css.slide}>BESTELLEN</div>
+            <div className={css.slide}> {t("BESTELLEN")}</div>
+            <div className={css.slide}> {t("BESTELLEN")}</div>
             <div className={css.slide} id={css.smallDevice}>
-              BESTELLEN
+              {t("BESTELLEN")}
             </div>
             <div className={css.slide} id={css.smallDevice}>
-              BESTELLEN
+              {t("BESTELLEN")}
             </div>
           </div>
           <div className={css.slideTrackHidden}>
-            <div className={css.slide}>BESTELLEN</div>
-            <div className={css.slide}>BESTELLEN</div>
+            <div className={css.slide}> {t("BESTELLEN")}</div>
+            <div className={css.slide}> {t("BESTELLEN")}</div>
             <div className={css.slide} id={css.smallDevice}>
-              BESTELLEN
+              {t("BESTELLEN")}
             </div>
             <div className={css.slide} id={css.smallDevice}>
-              BESTELLEN
+              {t("BESTELLEN")}
             </div>
           </div>
         </div>
       </Link>
 
       <div className={css.location}>
+        <img src={Decor} className={css.decor} />
         <a
           href="https://www.google.com/maps/place/Taksim+Baklavaci/@49.4906527,8.4639124,1393m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4797cc24dc58cd8f:0x8477dbef2ed4c00c!8m2!3d49.4906492!4d8.4664873!16s%2Fg%2F11c44pc18b?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"
           target="_blank"
           className={css.mapsLink}
         >
-          <img src={Decor} className={css.decor} />
-
           <div className={css.textHeading}>H3 1, 68159 Mannheim</div>
-
-          <div className={css.details}></div>
-          <img src={Decor} className={css.decor} id={css.flip} />
         </a>
+        <div className={css.details}></div>
+        <img src={Decor} className={css.decor} id={css.flip} />
       </div>
     </div>
   );

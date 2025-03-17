@@ -1,19 +1,14 @@
 {
-    "startseite": "Home",
-    "bestellen": "Order",
-    "über uns": "About",
-    "kontakt": "Contact",
-    "deutsch" : "German",
-    "türkisch" : "Turkish",
-    "englisch" : "English",
-    "datenrichtlinien" : "Data Policy",
-    "datenschutz" : "Privacy Policy",
-    "impressum" : "Legal Notice",
-    "kontaktiere uns" : "Contact us",
+    "Startseite": "Home",
+    "Bestellen": "Order",
+    "Über uns": "About",
+    "Datenrichtlinien" : "Data Policy",
+    "Datenschutz" : "Privacy Policy",
+    "Impressum" : "Legal Notice",
+    "Kontaktiere uns" : "Contact us",
     "SÜßWAREN" : "SWEETS",
     "BACKWAREN" : "BAKED",
     "TORTEN" : "CAKES",
     "Standort" : "Location",
-    "Stellen Sie sich jetzt ganz einfach Ihre eigene Bestellung aus allen aufgeführten Produkten zusammen. Wenn Ihre Bestellung abholbereit ist, werden Sie dann per Telefonat oder Email benachrichtigt und können direkt beim Abholen bar bezahlen." : "Now you can easily put together your own order from all the products listed. When your order is ready for collection, you will be notified by phone or email and can pay in cash directly upon collection.",
-    "Kommen Sie vorbei und überzeugen Sie sich selbst von unserer türkischen Meisterbackkunst." : "Come by and see for yourself our Turkish master baking skills."
+    "BESTELLEN" : "ORDER"
 }

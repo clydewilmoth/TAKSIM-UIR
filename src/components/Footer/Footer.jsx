@@ -13,12 +13,12 @@ function Footer() {
     <div className={css.footer}>
       <div className={css.wrapper}>
         <div className={css.dataPolicy}>
-          <div className={css.heading}>{t("datenrichtlinien")}</div>
-          <div className={css.privacyPolicy}>{t("datenschutz")}</div>
-          <div className={css.legalNotice}>{t("impressum")}</div>
+          <div className={css.heading}>{t("Datenrichtlinien")}</div>
+          <div className={css.privacyPolicy}>{t("Datenschutz")}</div>
+          <div className={css.legalNotice}>{t("Impressum")}</div>
         </div>
         <div className={css.contact}>
-          <div className={css.heading}>{t("kontaktiere uns")}</div>
+          <div className={css.heading}>{t("Kontaktiere uns")}</div>
           <div className={css.phoneWrapper}>
             <a href="tel:+4962127939">
               <img src={Phone} className={css.phone} />
